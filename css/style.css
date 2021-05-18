@@ -1,0 +1,28 @@
+
+.color_main {
+    color:#0065FC;
+}
+
+.color_light {
+    color:#DEEBFF;
+}
+
+.color_background {
+    background-color:#F2F2F2;
+}
+
+.text1 {
+    font-size: 1.3em;
+}
+.text2 {
+    font-size: 1.0em;
+}
+
+.zone_menu {
+    text-align: right;
+    white-space:nowrap;
+}
+
+.zone_menu_ligne {
+    display: inline-block;
+}
