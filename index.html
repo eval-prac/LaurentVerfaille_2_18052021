@@ -22,66 +22,245 @@
         </nav>
     </header>
 
+
+
+
     <section id="recherche">
         <h2>Trouvez votre hébergement pour les vacances de rève</h2>
         <p>En plein centre ville ou en pleine nature</p>
-        <label>ICON</label>
+        <label>
+            <span class="fa-stack fa-1x">
+                <i class="fas fa-circle fa-stack-2x color_light"></i>
+                <i class="fas fa-map-marker-alt fa-stack-1x color_main"></i>
+            </span></label>
         <input type="search" name=recherche placeholder="Marseille, France">
         <input type="submit" name="Rechercher" />
         <br />
-        <label>Filtres</label>
-        <input type="checkbox" id="economique" /><label for="economique">Economique</label>
-        <input type="checkbox" id="familial" /><label for="familial">Familial</label>
-        <input type="checkbox" id="romantique" /><label for="romantique">Romantique</label>
-        <input type="checkbox" id="animaux" /><label for="animaux">Animaux autorisés</label>
+        
+        <div>
+            <div>Filtres</div>
+            <input type="checkbox" id="economique" />
+            <label for="economique">
+                <span class="fa-stack fa-1x">
+                    <i class="fas fa-circle fa-stack-2x color_light"></i>
+                    <i class="fas fa-money-bill-wave fa-stack-1x color_main"></i>
+                </span>
+                Economique
+            </label>
+            <input type="checkbox" id="familial" />
+            <label for="familial"> <span class="fa-stack fa-1x">
+                    <i class="fas fa-circle fa-stack-2x color_light"></i>
+                    <i class="fas fa-child fa-stack-1x color_main"></i>
+                </span>
+                Familial
+            </label>
+            <input type="checkbox" id="romantique" />
+            <label for="romantique">
+                <span class="fa-stack fa-1x">
+                    <i class="fas fa-circle fa-stack-2x color_light"></i>
+                    <i class="fas fa-heart fa-stack-1x color_main"></i>
+                </span>
+                Romantique
+            </label>
+            <input type="checkbox" id="animaux" /><label for="animaux">
+                <span class="fa-stack fa-1x">
+                    <i class="fas fa-circle fa-stack-2x color_light"></i>
+                    <i class="fas fa-dog fa-stack-1x color_main"></i>
+                </span>
+                Animaux autorisés
+            </label>
+        </div>
     </section>
 
-    <section id="resultat">
 
+    <section id="resultat">
         <h3>Plus de 500 logement sont disponibles dans cette ville</h3>
         <section id="hebergement">
             <h2>Hébergement à Marseille</h2>
-            <div id="hebergement_list" style="border: black solid 1px;">
+            <div>
                 <article>
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de 25€</p>
-                    <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt"/>
+                    <figure>
+                        <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
                 </article>
                 <article>
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de 25€</p>
-                    <img src="image/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="annie-spratt"/>
+                    <figure>
+                        <img src="image/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
                 </article>
                 <article>
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de 25€</p>
-                    <img src="image/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="annie-spratt"/>
+                    <figure>
+                        <img src="image/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
                 </article>
                 <article>
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de 25€</p>
-                    <img src="image/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="annie-spratt"/>
+                    <figure>
+                        <img src="image/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
                 </article>
+                <article>
+                    <figure>
+                        <img src="image/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="image/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
             </div>
         </section>
 
         <aside id="populaire">
             <h2>Les plus populaires</h2>
-            <div style="border: black solid 1px;">
-                <div style="border:solid 1px; width:80px;">element 1</div>
-                <div style="border:solid 1px; width:80px;">element 2</div>
-                <div style="border:solid 1px; width:80px;">element 3</div>
-                <div style="border:solid 1px; width:80px;">element 4</div>
+            <div>
+                <article>
+                    <figure>
+                        <img src="image/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="image/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
             </div>
         </aside>
 
         <section id="activite">
             <h2>Activités à Marseille</h2>
-            <div style="border: black solid 1px;">
-                <div style="border:solid 1px; width:80px;">element 1</div>
-                <div style="border:solid 1px; width:80px;">element 2</div>
-                <div style="border:solid 1px; width:80px;">element 3</div>
-                <div style="border:solid 1px; width:80px;">element 4</div>
+            <div>
+                <article>
+                    <figure>
+                        <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p class="star">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
             </div>
         </section>
 
@@ -111,28 +290,4 @@
             </ul>
         </section>
     </footer>
-
-    <p>------------------------------------</p>
-
-    <i class="fab fa-gratipay"></i>
-    <span class="fa-stack fa-2x">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
-    </span>
-    <i class="far fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-child"></i>
-    <i class="fas fa-heart"></i>
-    <i class="fas fa-dog"></i>
-    <i class="fas fa-money-bill-wave"></i>
-    <i class="fas fa-map-marker-alt"></i>
-    <i class="fas fa-chart-line"></i>
-    <span class="fa-stack fa-2x">
-        <i class="fas fa-circle fa-stack-2x color_light"></i>
-        <i class="fas fa-money-bill-wave fa-stack-1x color_main"></i>
-    </span>
-
-
-</body>
-
 </html>
