@@ -4,18 +4,15 @@ body {
     font-family: Raleway;
 }
 
-
-
-h1 {
-	font-family: Raleway;
-	font-size: 23px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 700;
-	line-height: 23px;
+input[type=checkbox] {
+	display: none;
 }
 
-h2 {
+h1, h2, h3, p {
+	margin:1px;
+}
+
+h1 {
 	font-family: Raleway;
 	font-size: 20px;
 	font-style: normal;
@@ -24,14 +21,34 @@ h2 {
 	line-height: 20px;
 }
 
-h3 {
+h2, label {
 	font-family: Raleway;
 	font-size: 17px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 700;
-	line-height: 23px;
+	line-height: 17px;
 }
+
+h3 {
+	font-family: Raleway;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 13px;
+}
+
+p, h3 {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.star {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
 
 p, li {
 	font-family: Raleway;
@@ -42,15 +59,206 @@ p, li {
 	line-height: 20px;
 }
 
+#recherche div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	padding-right: 10px;
+}
+
+label {
+	border-style:solid;
+	border-color: #F2F2F2;
+	border-width:2px;
+	border-radius: 10px;
+}
+
+
+ul {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	padding-left: 0px;
+}
+
 li {
     list-style-type: none;
     list-style-position: inside;
 }
 
-img {
-    width:150px;
 
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
 }
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+header ul li {
+	padding-left: 10px;
+}
+
+
+
+#hebergement {
+	margin-top: 30px;
+	padding-top: 30px;
+    width: 60%;
+	height: 400px;
+	background-color: #F2F2F2;
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: top ;
+}
+#populaire {
+	margin-top: 30px;
+	padding-top: 30px;
+    width: 39%;
+	height: 400px;
+	background-color: #F2F2F2;
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: top ;
+}
+#activite {
+    width: 100%;
+}
+
+
+#hebergement div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#populaire div {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+    width: 100%;
+}
+#activite div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+    width: 100%;
+}
+
+
+#hebergement article {
+	display:flex;
+	flex-direction: column;
+	width:150px;
+	border-width:0px;
+	border-radius:5px;
+	padding:2px;
+	background-color: #FFFFFF;	
+}
+#populaire article {
+	display:flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: baseline;
+	width:300px;
+	border-width:0px;
+	border-radius:5px;
+	padding:2px;
+	background-color: #FFFFFF;
+}
+#activite article{
+	display:flex;
+	flex-direction: row;
+	width:150px;
+	border-width:0px;
+	border-radius:5px;
+	padding:2px;
+	background-color: #FFFFFF;
+}
+
+#hebergement figure {
+	display:flex;
+	flex-direction: column;
+	width:100%;
+	border-width:0px;
+	border-radius:5px;
+	padding:2px;
+	background-color: #FFFFFF;
+	margin: 0px;
+}
+#populaire figure {
+	display:flex;
+	flex-direction: row;
+	width:100%;
+	border-width:0px;
+	border-radius:5px;
+	padding:2px;
+	background-color: #FFFFFF;
+	margin: 0px;
+}
+#activite figure {
+	display:flex;
+	flex-direction: column;
+	width:100%;
+	border-width:0px;
+	border-radius:5px;
+	padding:2px;
+	background-color: #FFFFFF;
+	margin: 0px;
+}
+
+
+#hebergement img {
+	object-fit: cover;
+    width:100%;
+	height:70px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+#populaire img {
+	object-fit: cover;
+    width:200px;
+	height:70px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+#activite img {
+	object-fit: cover;
+    width:100%;
+	height:70px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+
+#hebergement figcaption {
+    width:100%;
+}
+#populaire figcaption {
+    width:200px;
+}
+#activite figcaption {
+    width:100%;
+}
+
+
 /* Color */
 
 .color_main {
@@ -75,23 +283,12 @@ header {
 #recherche {
     width: 100%;
 }
-
 #resultat {
     width: 100%;
 }
-
-#hebergement {
-    width: 80%;
-	background-color: #F2F2F2;
-}
-#populaire {
-    width: 20%;
-	background-color: #F2F2F2;
-}
-#activite {
-    width: 100%;
-}
 footer {
+	margin-top: 30px;
+	padding-top: 30px;
 	background-color: #F2F2F2;
     display:flex;
     flex-direction: row;
@@ -101,13 +298,7 @@ footer {
 }
 
 
-#hebergement_list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
+
 
 .text {
 	font-size: 1.0em;
@@ -117,9 +308,6 @@ footer {
 	text-align: right;
 	white-space: nowrap;
 }
-
 .zone_menu_ligne {
 	display: inline-block;
 }
-
-
