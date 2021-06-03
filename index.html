@@ -3,27 +3,28 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservia</title>
-    <!--
-    <link rel="stylesheet" href="css/style768.css" />
-    -->
-    <link rel="stylesheet" media="screen and (min-width: 991px)" href="css/style1200.css" /> 
-    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 990px)" href="css/style991.css" /> 
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/style768.css" />
+    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 990px)" href="css/style991.css" /> 
+    <link rel="stylesheet" media="screen and (min-width: 991px)" href="css/style1200.css" /> 
 
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' />
     <script src="https://kit.fontawesome.com/6dd7ccfc27.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    
+    <div class="body_content">
     <header>
         <div id="titre_reservia">
-            <div>Reservia</div>
-            <div>S'inscrire</div>
+            <img src="image/logo/Reservia.svg" alt="logo"/>
         </div>
         <div id="menu">
             <div>Hébergements</div>
-            <div>Activités</div>
+            <div class="menu_activity">Activités</div>
+            <div class="menu_subscribe">S'inscrire</div>
         </div>
 
         <!--
@@ -108,7 +109,7 @@
     <section id="resultat">
         <h3>Plus de 500 logement sont disponibles dans cette ville</h3>
 
-        <aside id="populaire">
+        <aside id="populaire" class="wide_border">
             <h2>Les plus populaires</h2>
             <div>
                 <article>
@@ -356,7 +357,8 @@
 
     </section>
 
-    <footer>
+
+    <footer class="wide_border">
         <section>
             <h3>A propos</h3>
             <ul>
@@ -380,5 +382,5 @@
             </ul>
         </section>
     </footer>
-
+    </div>
 </html>
