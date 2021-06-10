@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="container_titre_menu">
-            <nav class="zone_menu" style="display: block;">
+            <nav class="zone_menu">
                 <div class="menu_titre"><img class="menu_titre" src="image/logo/Reservia.svg" alt="logo" /></div>
                 <div class="menu_hebergement"><a href="#hebergement">Hébergements</a></div>
                 <div class="menu_activity"><a href="#activite">Activités</a></div>
@@ -26,23 +26,25 @@
         </div>
     </header>
 
+
+
     <main>
         <div class="container_search">
-            <div class="row">
+            <div class="area_column">
                 <h2>Trouvez votre hébergement pour les vacances de rève</h2>
                 <p class="text_margin">En plein centre ville ou en pleine nature</p>
+
+
                 <div class="search_envelope">
                     <div class="search_logo">
                         <span class="fa-stack fa-1x">
                             <i class="fas fa-map-marker-alt fa-stack-1x"></i>
                         </span>
                     </div>
-                    <div class="search_text">
-                        <input class="search_text" type="search" name=recherche placeholder="Marseille, France">
-                    </div>
+                    <input class="search_text" type="search"   name=recherche placeholder="Marseille, France"  />
                     <div class="search_button">
                         <span class="fa-stack fa-1x">
-                            <i class="fas fa-map-marker-alt fa-stack-1x"></i>
+                            <i class="fas fa-search fa-stack-1x"></i>
                         </span>
                     </div>
                 </div>
@@ -97,13 +99,29 @@
 
         <div class="group_result">
 
+            <div class="populaire_hebergement">
             <aside class="container_populaire">
-                <div class="row">
+                <div class="area_column">
                     <h2>Les plus populaires</h2>
                     <div>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt" />
+                                <figcaption>
+                                    <div>
+                                        <h3>Auberge la Cannebière</h3>
+                                        <p>Nuit à partir de 25€</p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </article>
+                        <article>
+                            <figure>
+                                <img src="image/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -119,23 +137,7 @@
                         </article>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                                    alt="annie-spratt" />
-                                <figcaption>
-                                    <div>
-                                        <h3>Auberge la Cannebière</h3>
-                                        <p>Nuit à partir de 25€</p>
-                                    </div>
-                                    <div>
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </article>
-                        <article>
-                            <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -155,12 +157,12 @@
 
             <section class="container_hebergement">
                 <a id="hebergement"></a>
-                <h2 class="row">Hébergement à Marseille</h2>
-                <div class="row">
+                <h2 class="area_column">Hébergement à Marseille</h2>
+                <div class="area_column">
                     <div>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -176,7 +178,7 @@
                         </article>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -192,7 +194,7 @@
                         </article>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -208,7 +210,7 @@
                         </article>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -224,7 +226,7 @@
                         </article>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -240,7 +242,7 @@
                         </article>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -257,17 +259,17 @@
                     </div>
                 </div>
             </section>
-
+            </div>
 
 
             <section class="container_activite">
-                <div class="row">
+                <div class="area_column">
                     <a id="activite"></a>
                     <h2>Activités à Marseille</h2>
                     <div>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -283,7 +285,7 @@
                         </article>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -299,7 +301,7 @@
                         </article>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -315,7 +317,7 @@
                         </article>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -331,7 +333,7 @@
                         </article>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -347,7 +349,7 @@
                         </article>
                         <article>
                             <figure>
-                                <img src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                <img src="image/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                     alt="annie-spratt" />
                                 <figcaption>
                                     <div>
@@ -370,7 +372,7 @@
     </main>
     <footer>
         <div class="container_footer">
-            <div class="row">
+            <div class="area_footer">
                 <section>
                     <h3 class="text_margin">A propos</h3>
                     <ul>
