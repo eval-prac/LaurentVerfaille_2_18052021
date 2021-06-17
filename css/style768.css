@@ -1,5 +1,16 @@
 
-
+/* Resolution swap */
+.hide_768 {
+	display: none;
+}
+/*
+.hide_990 {
+	display: none;
+}
+.hide_1200 {
+	display: none;
+}
+*/
 
 
 h1 {
@@ -29,8 +40,8 @@ h3 {
 }
 
 p, h3 {
-	margin-top:0.8em;
-	margin-bottom:2px;
+	margin-top:0.8vw;
+	margin-bottom:0.2vw;
 }
 .star {
 	margin-top:0px;
@@ -257,7 +268,7 @@ body, header, main, footer, .container {
 
 /***************************************/
 
-.container_populaire div {
+.container_populaire__div_article {
     width: 97%;
 	display: flex;
 	flex-direction: column;
@@ -265,7 +276,7 @@ body, header, main, footer, .container {
 	justify-content: baseline;
 	align-items: stretch;
 }
-.container_hebergement div {
+.container_hebergement__div_article {
     width: 97%;
     display: flex;
     flex-direction: column;
@@ -273,7 +284,7 @@ body, header, main, footer, .container {
 	justify-content: baseline;
     align-items: stretch;
 }
-.container_activite div {
+.container_activite__div_article {
     width: 97%;
 	display: flex;
 	flex-direction: column;
@@ -319,7 +330,7 @@ body, header, main, footer, .container {
 	background-color: #FFFFFF;
 }
 
-.container_populaire figure {
+.container_populaire div.figure {
 	
     display:flex;
 	flex-direction: row;
@@ -331,7 +342,7 @@ body, header, main, footer, .container {
 	background-color: #FFFFFF;
 	margin: 0px;
 }
-.container_hebergement figure {
+.container_hebergement div.figure {
 	
 	display:flex;
 	flex-direction: column;
@@ -377,7 +388,7 @@ body, header, main, footer, .container {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
-.container_activite img {
+.container_activite div.figure {
     
 	height:115px;
 	object-fit: cover;
@@ -387,27 +398,27 @@ body, header, main, footer, .container {
 }
 
 
-.container_populaire figcaption {
+.container_populaire .figcaption {
 	flex-grow: 1;
-    margin:10px;
+    margin:0.7vw;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: baseline;
 }
-.container_hebergement figcaption {
+.container_hebergement .figcaption {
 	flex-grow: 1;
-    margin:10px;
+    margin:0.7vw;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: baseline;
 }
-.container_activite figcaption {
+.container_activite .figcaption {
 	flex-grow: 1;
-    margin:10px;
+    margin:0.7vw;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -416,48 +427,36 @@ body, header, main, footer, .container {
 }
 
 
-.container_populaire figcaption div:nth-child(1) {
+.container_populaire .figcaption div:nth-child(1) {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
 }
-.container_hebergement figcaption div:nth-child(1) {
+.container_hebergement .figcaption div:nth-child(1) {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
 }
-.container_activite figcaption div:nth-child(1) {
+.container_activite .figcaption div:nth-child(1) {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
 }
 
-.container_populaire figcaption div:nth-child(2) {
-	display: flex;	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
-}
-.container_hebergement figcaption div:nth-child(2) {
+.container_populaire .figcaption div:nth-child(2) {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
+	padding-top: 0.6em;
+	font-size: 0.8em;
+	color: #0065FC;
 }
-.container_activite figcaption div:nth-child(2) {
-	display: flex;	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
+.container_hebergement .figcaption div:nth-child(2) {
+	display: flex;
+	padding-top: 0.6em;
+	font-size: 0.8em;
+	color: #0065FC;
+}
+.container_activite .figcaption div:nth-child(2) {
+	display: flex;
+	padding-top: 0.6em;
+	font-size: 0.8em;
+	color: #0065FC;
 }
 
 
@@ -486,5 +485,60 @@ body, header, main, footer, .container {
 	justify-content: baseline;
 	align-items: stretch;
 	padding:3%;	
+}
+
+article:nth-child(1) div.figure {
+	background-image: url("../image/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+article:nth-child(2) div.figure {
+	background-image: url("../image/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+article:nth-child(3) div.figure {
+	background-image: url("../image/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+article:nth-child(4) div.figure {
+	background-image: url("../image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+}
+article:nth-child(5) div.figure {
+	background-image: url("../image/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+article:nth-child(6) div.figure {
+	background-image: url("../image/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+
+article:nth-child(7) div.figure {
+	background-image: url("../image/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+article:nth-child(8) div.figure {
+	background-image: url("../image/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+article:nth-child(9) div.figure {
+	background-image: url("../image/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+
+article:nth-child(10) div.figure {
+	background-image: url("../image/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+article:nth-child(11) div.figure {
+	background-image: url("../image/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+article:nth-child(12) div.figure {
+	background-image: url("../image/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+article:nth-child(13) div.figure {
+	background-image: url("../image/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+article:nth-child(14) div.figure {
+	background-image: url("../image/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+article:nth-child(15) div.figure {
+	background-image: url("../image/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+
+.container_activite .figcaption div:nth-child(1) p {
+	display: none;
+}
+.container_activite .figcaption div:nth-child(2) {
+	display: none;
 }
 

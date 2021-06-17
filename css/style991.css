@@ -1,4 +1,17 @@
-
+/* Resolution swap */
+/*
+.hide_768 {
+	display: none;
+}
+*/
+.hide_990 {
+	display: none;
+}
+/*
+.hide_1200 {
+	display: none;
+}
+*/
 
 
 
@@ -29,8 +42,8 @@ h3 {
 }
 
 p, h3 {
-	margin-top:0.8em;
-	margin-bottom:2px;
+	margin-top:0.8vw;
+	margin-bottom:0.2vw;
 }
 .star {
 	margin-top:0px;
@@ -90,18 +103,17 @@ body, header, main, footer, .container {
 }
 .container_populaire {
 	flex-grow: 1;
-	width: 30%;
     margin:0;
 	padding:0;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
-	justify-content: baseline;
+	xxx    align-content: 
+	xxxxx  justify-content: ;
     align-items: stretch;
 	background-color: #F2F2F2;
 }
 .container_hebergement {
-	flex-grow: 2;
 	width: 70%;
     margin:0 1em 0 0;
 	padding:0;
@@ -113,6 +125,7 @@ body, header, main, footer, .container {
 	background-color: #F2F2F2;
 }
 .container_activite {
+	width: 100%;
 	
     margin:0;
 	padding:0;
@@ -178,7 +191,7 @@ body, header, main, footer, .container {
 	padding:3%;
 	display: block;
 	float: left;
-	border-top: solid 2px #0065FC;
+	border-top: solid 2px white;
 	text-align: center;
 	font-size: 1em;
 	color: #0065FC;
@@ -210,7 +223,9 @@ body, header, main, footer, .container {
 	font-weight: bold;
 }
 
-
+div:hover.menu_hebergement, div:hover.menu_activity, div:hover.menu_subscribe {
+	border-top: solid 2px #0065FC;
+}
 /***********************/
 
 .radio {
@@ -265,34 +280,31 @@ body, header, main, footer, .container {
 /***************************************/
 
 .populaire_hebergement {
+	padding-left: 3%;
+	padding-right: 3%;
 	display: flex;
 	flex-direction: row-reverse;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: flex-start;
-
+	justify-content: stretch;
+	align-items: stretch;
 }
 
 
 
-.container_populaire div {
-    width: 97%;
+.container_populaire__div_article {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	justify-content: baseline;
 	align-items: stretch;
 }
-.container_hebergement div {
-    width: 97%;
+.container_hebergement__div_article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 	justify-content: baseline;
     align-items: stretch;
 }
-.container_activite div {
-    width: 97%;
+.container_activite__div_article {
+	width: 97%;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -302,9 +314,8 @@ body, header, main, footer, .container {
 
 .container_populaire article {
 	margin-bottom: 1.5em;
-	
 	display:flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: flex-start;
 	align-items: stretch;
 	border-width:0px;
@@ -313,8 +324,8 @@ body, header, main, footer, .container {
 	background-color: #FFFFFF;
 }
 .container_hebergement article {
+	width: 24%;
 	margin: 0 1em 1.5em 1em;
-	
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -326,7 +337,6 @@ body, header, main, footer, .container {
 }
 .container_activite article {
 	margin-bottom: 1.5em;
-	
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -337,95 +347,71 @@ body, header, main, footer, .container {
 	background-color: #FFFFFF;
 }
 
-.container_populaire figure {
-	
-    display:flex;
-	flex-direction: row;
-	justify-content: stretch;
-	align-items: stretch;
-	border-width:0px;
-	border-radius:5px;
+
+
+.container_populaire div.figure {
+	width: 10vw;
+	height: 12vw;
 	padding:2px;
-	background-color: #FFFFFF;
 	margin: 0px;
+	border-width:0px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	background-position: center;
+	background-image: url("../image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
 }
-.container_hebergement figure {
-	
-	display:flex;
-	flex-direction: column;
-	justify-content: stretch;
-	align-items: stretch;
-	border-width:0px;
-	border-radius:5px;
+.container_hebergement div.figure {
+	height: 12vw;
 	padding:2px;
-	background-color: #FFFFFF;
 	margin: 0px;
-	box-shadow: 3px 3px 15px 3px lightgray ;
+	border-width:0px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	background-position: center;
+	background-image: url("../image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
 }
-.container_activite figure {
-	
-	display:flex;
-	flex-direction: column;
-	justify-content: stretch;
-	align-items: stretch;
-	border-width:0px;
-	border-radius:5px;
+.container_activite div.figure {
+	height: 12vw;
 	padding:2px;
-	background-color: #FFFFFF;
 	margin: 0px;
-	box-shadow: 3px 3px 15px 3px lightgray ;
+	border-width:0px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	background-position: center;
+	background-image: url("../image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
 }
 
 
-.container_populaire img {
-	width: 20%;
+.container_populaire .figcaption {
 	flex-grow: 1;
-	/*width:127px;
-	height:134px;*/
-	object-fit: cover;
-	overflow: hidden;
-	border-radius: 5px;
-
-}
-.container_hebergement img {
-    
-	height:115px;
-	object-fit: cover;
-	overflow: hidden;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
-.container_activite img {
-    
-	height:115px;
-	object-fit: cover;
-	overflow: hidden;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
-
-
-.container_populaire figcaption {
-	flex-grow: 1;
-    margin:10px;
+    margin:0.7vw;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: baseline;
 }
-.container_hebergement figcaption {
+.container_hebergement .figcaption {
 	flex-grow: 1;
-    margin:10px;
+    margin:0.7vw;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: baseline;
 }
-.container_activite figcaption {
+.container_activite .figcaption {
 	flex-grow: 1;
-    margin:10px;
+    margin:0.7vw;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -434,51 +420,71 @@ body, header, main, footer, .container {
 }
 
 
-.container_populaire figcaption div:nth-child(1) {
+.container_populaire .figcaption div:nth-child(1) {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
 }
-.container_hebergement figcaption div:nth-child(1) {
+.container_hebergement .figcaption div:nth-child(1) {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
 }
-.container_activite figcaption div:nth-child(1) {
+.container_activite .figcaption div:nth-child(1) {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
 }
 
-.container_populaire figcaption div:nth-child(2) {
-	display: flex;	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
-}
-.container_hebergement figcaption div:nth-child(2) {
+.container_populaire .figcaption div:nth-child(2) {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
+	padding-top: 0.6em;
+	font-size: 0.8em;
+	color: #0065FC;
 }
-.container_activite figcaption div:nth-child(2) {
-	display: flex;	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
+.container_hebergement .figcaption div:nth-child(2) {
+	display: flex;
+	padding-top: 0.6em;
+	font-size: 0.8em;
+	color: #0065FC;
+}
+.container_activite .figcaption div:nth-child(2) {
+	display: flex;
+	padding-top: 0.6em;
+	font-size: 0.8em;
+	color: #0065FC;
 }
 
 
+.container_activite article:nth-child(2) {
+	height:43%;
+}
+.container_activite article:nth-child(3) {
+	height:43%;
+}
+.container_activite article:nth-child(5) {
+	height:43%;
+}
+.container_activite article:nth-child(6) {
+	height:43%;
+}
+
+
+.container_activite article:nth-child(1) {
+	height:100%;
+}
+.container_activite article:nth-child(1) div.figure {
+	flex-grow: 1;
+}
+.container_activite article:nth-child(1) div.figcaption {
+	flex-grow: 0;
+}
+.container_activite article:nth-child(4) {
+	height:100%;
+}
+.container_activite article:nth-child(4) div.figure {
+	flex-grow: 1;
+}
+.container_activite article:nth-child(4) div.figcaption {
+	flex-grow: 0;
+}
 
 .container_footer ul {
 	margin:0px;
@@ -506,3 +512,59 @@ body, header, main, footer, .container {
 	align-items: stretch;
 	padding:3%;	
 }
+
+article:nth-child(1) div.figure {
+	background-image: url("../image/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+article:nth-child(2) div.figure {
+	background-image: url("../image/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+article:nth-child(3) div.figure {
+	background-image: url("../image/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+article:nth-child(4) div.figure {
+	background-image: url("../image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+}
+article:nth-child(5) div.figure {
+	background-image: url("../image/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+article:nth-child(6) div.figure {
+	background-image: url("../image/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+
+article:nth-child(7) div.figure {
+	background-image: url("../image/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+article:nth-child(8) div.figure {
+	background-image: url("../image/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+article:nth-child(9) div.figure {
+	background-image: url("../image/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+
+article:nth-child(10) div.figure {
+	background-image: url("../image/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+article:nth-child(11) div.figure {
+	background-image: url("../image/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+article:nth-child(12) div.figure {
+	background-image: url("../image/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+article:nth-child(13) div.figure {
+	background-image: url("../image/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+article:nth-child(14) div.figure {
+	background-image: url("../image/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+article:nth-child(15) div.figure {
+	background-image: url("../image/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+
+.container_activite .figcaption div:nth-child(1) p {
+	display: none;
+}
+.container_activite .figcaption div:nth-child(2) {
+	display: none;
+}
+
