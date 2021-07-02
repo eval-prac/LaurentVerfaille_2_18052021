@@ -13,12 +13,6 @@
 	color: #F2F2F2;
 }
 
-body {
-	min-width: 150px;
-}
-
-
-
 .clearfix:after { 
 	content: "";
 	visibility: hidden;
@@ -57,11 +51,6 @@ body, h1, h2, h3, p, li {
 	font-family: Raleway;
 }
 
-article {
-	box-shadow: 0.1em 0.3em 0.8em #E0E0E0;
-}
-
-
 .search_envelope {
 	height:50px;
 	border:solid 1px #F2F2F2;
@@ -85,6 +74,7 @@ article {
 	align-items: stretch;
 	flex-grow: 1;
 	border-width: 0px;
+	padding-left: 1em;
 	font-size: 0.9em;
 	line-height: 0.9em;
 	font-weight: bold;
@@ -110,56 +100,8 @@ article {
 
 a:link {
 	text-decoration: none;
-	color: #0065FC;
+	color: black;
 }
 a:visited {
-	color: #0065FC;
-}
-
-.container_populaire article:nth-child(1) div.figure {
-	background-image: url("../image/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-}
-.container_populaire article:nth-child(2) div.figure {
-	background-image: url("../image/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-}
-.container_populaire article:nth-child(3) div.figure {
-	background-image: url("../image/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-}
-
-.container_hebergement article:nth-child(1) div.figure {
-	background-image: url("../image/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-}
-.container_hebergement article:nth-child(2) div.figure {
-	background-image: url("../image/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-}
-.container_hebergement article:nth-child(3) div.figure {
-	background-image: url("../image/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-}
-.container_hebergement article:nth-child(4) div.figure {
-	background-image: url("../image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-}
-.container_hebergement article:nth-child(5) div.figure {
-	background-image: url("../image/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-}
-.container_hebergement article:nth-child(6) div.figure {
-	background-image: url("../image/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-}
-
-.container_activite article:nth-child(1) div.figure {
-	background-image: url("../image/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-}
-.container_activite article:nth-child(2) div.figure {
-	background-image: url("../image/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-}
-.container_activite article:nth-child(3) div.figure {
-	background-image: url("../image/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-}
-.container_activite article:nth-child(4) div.figure {
-	background-image: url("../image/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-}
-.container_activite article:nth-child(5) div.figure {
-	background-image: url("../image/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-}
-.container_activite article:nth-child(6) div.figure {
-	background-image: url("../image/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+	color: black;
 }
