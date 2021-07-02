@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservia</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/style768.css" />
+    <link rel="stylesheet" media="screen and (max-width: 300px)" href="css/style300.css" />
+    <link rel="stylesheet" media="screen and (min-width: 301px) and (max-width: 768px)" href="css/style768.css" />
     <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 990px)" href="css/style991.css" />
     <link rel="stylesheet" media="screen and (min-width: 991px)" href="css/style1200.css" />
 
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header id=header>
         <div class="container_titre_menu">
             <nav class="zone_menu clearfix">
                 <div class="menu_titre"><img src="image/logo/Reservia.svg" alt="logo" /></div>
@@ -30,14 +31,14 @@
         <div class="container_search">
             <div class="area_column">
                 <h2>Trouvez votre hébergement pour les vacances de rève</h2>
-                <p class="text_margin">En plein centre ville ou en pleine nature</p>
+                <h3 class="text_margin">En plein centre ville ou en pleine nature</h3>
                 <div class="search_envelope spacing">
                     <div class="search_logo">
                         <span class="fa-stack fa-1x">
                             <i class="fas fa-map-marker-alt fa-stack-1x"></i>
                         </span>
                     </div>
-                    <input class="search_text" type="search" name=recherche value="Marseille, France" />
+                    <input class="search_text" type="search" name=recherche value="Marseille, France" placeholder="Lille, France"/>
                     <div class="search_button search_button_icon hide_990 hide_1200">
                         <span class="fa-stack fa-1x">
                             <i class="fas fa-search fa-stack-1x"></i>
@@ -94,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="line_centred">
+                <h3 class="line_centred text_margin">
                     <span class="fa-stack" >
                         <i class="far fa-circle fa-stack-2x off"></i>
                         <i class="fas fa-info fa-stack-1x color_main"></i>
@@ -177,7 +178,9 @@
                 <section class="container_hebergement">
                     <a id="hebergement"></a>
                     <div class="area_column">
-                        <h2>Hébergement à Marseille</h2>
+                        <div class="line_space_between">
+                            <h2>Hébergement à Marseille</h2>
+                        </div>
                     </div>
                     <div class="area_column">
                         <div class="container_hebergement__div_article">
@@ -436,6 +439,7 @@
             </div>
         </div>
     </footer>
+    <div class="invalid_display">Résolution d'écran trop faible</div>
 </body>
 
 </html>
