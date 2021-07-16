@@ -48,7 +48,7 @@ h1, h2, h3, p {
 }
 
 body, h1, h2, h3, p, li {
-	font-family: Raleway;
+	font-family: Raleway, sans-serif;
 }
 
 .search_envelope {
