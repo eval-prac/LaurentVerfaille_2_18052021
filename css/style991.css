@@ -16,10 +16,6 @@
 }
 */
 
-.search_text {
-	flex-grow: 0;
-}
-
 h1 {
 	font-size: 1.4em;
 	line-height: 1.4em;
@@ -155,17 +151,18 @@ body, header, main, footer, .container {
 	display: block;
 }
 .menu_titre {
-    margin:0 30% 0 0;
-	padding:3%;
+	width:70px;
+    margin:0 40% 0 0;
+	padding:3% 0 3% 3%;
 	display: block;
 	float: left;
 	color: #0065FC;
 }
 .menu_titre img {
-	width: 70%;
+	width: 100%;
 }
 .menu_hebergement {
-	width:auto;
+	width:10%;
     margin:0;
 	padding:3%;
 	display: block;
@@ -177,7 +174,7 @@ body, header, main, footer, .container {
 	font-weight: bold;
 }
 .menu_activity {
-	width:auto;
+	width:10%;
 	margin:0;
 	padding:3%;
 	display: block;
@@ -192,7 +189,7 @@ body, header, main, footer, .container {
 }
 
 .menu_subscribe {
-	width:auto;
+	width:10%;
     margin:0;
 	padding:3%;
 	display: block;
@@ -235,6 +232,10 @@ div:hover.menu_hebergement a, div:hover.menu_activity a, div:hover.menu_subscrib
 	align-items: center;
 	flex-basis: auto;
 }
+.radio_envelope:hover {
+	color: #0065FC;
+	box-shadow:5px 8px 5px #E0E0E0;
+}
 .radio_logo {
 	width:50px;
 	height:50px;
@@ -260,7 +261,9 @@ div:hover.menu_hebergement a, div:hover.menu_activity a, div:hover.menu_subscrib
 	display: none;
 }
 
-
+.search_envelope {
+	width:50%;
+}
 
 /***************************************/
 
@@ -322,6 +325,7 @@ div:hover.menu_hebergement a, div:hover.menu_activity a, div:hover.menu_subscrib
 }
 .container_activite article {
 	width: 23%;
+	height: 40%;
 	margin-bottom: 1.5em;
 	display:flex;
 	flex-direction: column;
@@ -329,45 +333,46 @@ div:hover.menu_hebergement a, div:hover.menu_activity a, div:hover.menu_subscrib
 	align-items: stretch;
 	border-width:0px;
 	border-radius:5px;
-	padding:3px;
 	background-color: #FFFFFF;
 }
 
 
 
 .container_populaire div.figure {
-	min-width: 10vw;
+	width: auto;
+	height: auto;
+}
+.container_populaire div.figure img {
+	display: block;
+	width: 10vw;
 	height: 10vw;
-	padding:3px;
-	margin: 0px;
-	border-width:0px;
 	border-top-left-radius:5px;
 	border-bottom-left-radius:5px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover; 
 }
+
 .container_hebergement div.figure {
-	height: 8vw;
-	padding:3px;
-	margin: 0px;
-	border-width:0px;
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover; 
+	width: auto;
+	height: auto;
 }
-.container_activite div.figure {
-	height: 10vw;
-	padding:3px;
-	margin: 0px;
-	border-width:0px;
+.container_hebergement div.figure img {
+	display: block;
+	width: 100%;
+	height: 8vw;
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover; 
+}
+
+.container_activite div.figure {
+	width: auto;
+	height: 100%;
+	overflow: auto;
+}
+.container_activite div.figure img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
 }
 
 
@@ -381,6 +386,7 @@ div:hover.menu_hebergement a, div:hover.menu_activity a, div:hover.menu_subscrib
 	align-items: baseline;
 }
 .container_hebergement .figcaption {
+	width: auto;
 	flex-grow: 1;
     margin:0.7vw;
 	display: flex;
@@ -390,7 +396,8 @@ div:hover.menu_hebergement a, div:hover.menu_activity a, div:hover.menu_subscrib
 	align-items: baseline;
 }
 .container_activite .figcaption {
-	flex-grow: 1;
+	width: auto;
+	height: 3vw;
     margin:0.7vw;
 	display: flex;
 	flex-wrap: wrap;
@@ -432,38 +439,11 @@ div:hover.menu_hebergement a, div:hover.menu_activity a, div:hover.menu_subscrib
 	color: #0065FC;
 }
 
-/*
-.container_activite article:nth-child(2) {
-	height:43%;
-}
-.container_activite article:nth-child(3) {
-	height:43%;
-}
-.container_activite article:nth-child(5) {
-	height:43%;
-}
-.container_activite article:nth-child(6) {
-	height:43%;
-}
-*/
-
 .container_activite article:nth-child(1) {
 	height:100%;
 }
-.container_activite article:nth-child(1) div.figure {
-	flex-grow: 1;
-}
-.container_activite article:nth-child(1) div.figcaption {
-	flex-grow: 0;
-}
 .container_activite article:nth-child(4) {
 	height:100%;
-}
-.container_activite article:nth-child(4) div.figure {
-	flex-grow: 1;
-}
-.container_activite article:nth-child(4) div.figcaption {
-	flex-grow: 0;
 }
 
 .container_footer ul {
@@ -499,52 +479,4 @@ div:hover.menu_hebergement a, div:hover.menu_activity a, div:hover.menu_subscrib
 }
 .container_activite .figcaption div:nth-child(2) {
 	display: none;
-}
-
-.container_populaire article:nth-child(1) div.figure {
-	background-image: url("../image/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-}
-.container_populaire article:nth-child(2) div.figure {
-	background-image: url("../image/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg");
-}
-.container_populaire article:nth-child(3) div.figure {
-	background-image: url("../image/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-}
-
-.container_hebergement article:nth-child(1) div.figure {
-	background-image: url("../image/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-}
-.container_hebergement article:nth-child(2) div.figure {
-	background-image: url("../image/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-}
-.container_hebergement article:nth-child(3) div.figure {
-	background-image: url("../image/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-}
-.container_hebergement article:nth-child(4) div.figure {
-	background-image: url("../image/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-}
-.container_hebergement article:nth-child(5) div.figure {
-	background-image: url("../image/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-}
-.container_hebergement article:nth-child(6) div.figure {
-	background-image: url("../image/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-}
-
-.container_activite article:nth-child(1) div.figure {
-	background-image: url("../image/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-}
-.container_activite article:nth-child(2) div.figure {
-	background-image: url("../image/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-}
-.container_activite article:nth-child(3) div.figure {
-	background-image: url("../image/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-}
-.container_activite article:nth-child(4) div.figure {
-	background-image: url("../image/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-}
-.container_activite article:nth-child(5) div.figure {
-	background-image: url("../image/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-}
-.container_activite article:nth-child(6) div.figure {
-	background-image: url("../image/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }

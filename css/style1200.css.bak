@@ -324,7 +324,6 @@ div:hover.menu_hebergement a, div:hover.menu_activity a, div:hover.menu_subscrib
 }
 .container_activite article {
 	width: 23%;
-	height: 40%;
 	margin-bottom: 1.5em;
 	display:flex;
 	flex-direction: column;
@@ -332,6 +331,7 @@ div:hover.menu_hebergement a, div:hover.menu_activity a, div:hover.menu_subscrib
 	align-items: stretch;
 	border-width:0px;
 	border-radius:5px;
+	padding:3px;
 	background-color: #FFFFFF;
 }
 
